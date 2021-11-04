@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "@eslint-kit/patch",
+    "@eslint-kit/base",
+    "@eslint-kit/typescript",
+    "@eslint-kit/react",
+    "plugin:react/jsx-runtime",
+    "plugin:import/typescript"
+  ],
+  "env": {
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+  "rules": {
+    "import/order": "off",
+    "import/no-unresolved": "off",
+    "linebreak-style": ["error", "unix"]
+  }
+}
